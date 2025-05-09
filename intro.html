@@ -79,7 +79,6 @@
 
         translateButton.addEventListener('click', () => {
     if (currentShloka) {
-        // Use innerHTML and explicit <br> for new lines
         shlokaElement.innerHTML = `${currentShloka.sanskrit.replaceAll('\n', '<br>')}<br><br><strong>Translation:</strong> ${currentShloka.translation}`;
         translateButton.disabled = true;
     }
